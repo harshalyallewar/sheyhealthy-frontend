@@ -1,0 +1,162 @@
+.sidebar {
+  height: 100%;
+  /* width: 300px; */
+  background-color: #005555;
+  box-shadow: 0 0 2px white;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapse {
+}
+
+.sidebarheading {
+  width: 100%;
+}
+
+.sidebarheading h1 {
+  margin: 0;
+
+  color: white;
+  padding: 10px;
+  padding-bottom: 0%;
+  font-size: 45px;
+}
+
+.role {
+  font-size: 15px !important;
+  margin-bottom: 40px !important;
+  margin-top: 0px !important;
+  font-weight: 400;
+  padding-top: 1px !important;
+}
+
+.content {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .rightside {
+  align-items: center;
+  display: flex;
+  margin-right: 35px;
+}
+
+.header .rightside a {
+  margin-left: 13px;
+}
+
+.header a {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.body {
+  /* width: 100%; */
+  height: calc(100% - 95px);
+  box-shadow: 0 0 2px black;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-y: scroll; 
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuitem {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 15px 0px;
+  color: rgba(255, 255, 255, 0.727);
+  padding: 5px 0px;
+  padding-left: 15px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.menuitem a {
+  margin-left: 13px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.727);
+}
+
+.active-menu-item {
+  color: white;
+  background-color: #013737;
+  border-radius: 5px;
+  padding: 8px 0px;
+  padding-left: 15px;
+  padding-right: 30px;
+}
+
+.timepickerdiv {
+  padding: 5px;
+}
+
+.timepicker {
+  border: none;
+  box-shadow: none;
+  border-style: none;
+}
+
+.bookAppGridContainer h5, .bookAppGridContainer p{
+     color: #353535;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebarheading h1 {
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .sidebar {
+  height: 97%;
+  }
+
+  .header {
+    height: 7%;
+    margin-bottom: 10px
+  }
+
+  .body {
+    height: 87%;
+  }
+
+  .sidebar {
+    margin-right: 10px;
+  }
+  
+
+  .menuNamesHiddenInMobile,
+  .collapse {
+    display: none;
+  }
+
+  .menuitem {
+    padding: 5px 5px;
+  }
+
+  .active-menu-item {
+    padding: 5px 5px;
+  }
+}

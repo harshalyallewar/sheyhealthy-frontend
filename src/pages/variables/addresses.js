@@ -1,0 +1,1 @@
+export const server_address = "https://shey-healthy-backend.onrender.com";
