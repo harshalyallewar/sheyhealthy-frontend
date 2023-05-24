@@ -45,7 +45,6 @@ function Users() {
       dispatch(hideLoading());
 
       if (response.data.success) {
-        console.log(response.data);
         setUsers(response.data.data);
       } else {
       }

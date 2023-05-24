@@ -137,8 +137,9 @@ function Layout(props) {
 
             <div
               onClick={() => {
+                localStorage.clear();
                 window.location.reload();              
-              localStorage.clear();
+              
               
             }}
               key="logout"
@@ -146,7 +147,7 @@ function Layout(props) {
             >
               <ExitToAppOutlinedIcon sx={iconStyle} />
               {!collapsed && (
-                <Link className="menuNamesHiddenInMobile" to='/login'>
+                <Link className="menuNamesHiddenInMobile" to='/'>
                   Logout
                 </Link>
               )}

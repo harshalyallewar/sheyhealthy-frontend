@@ -33,8 +33,8 @@ export default function ProtectedRoutes(props) {
         navigate("/login");
       }
     } catch (err) {
-      localStorage.clear();
       dispatch(hideLoading());
+      localStorage.clear();
       navigate("/login");
     }
   };
