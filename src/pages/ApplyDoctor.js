@@ -62,7 +62,7 @@ function ApplyDoctor() {
           },
         }
       );
-
+console.log(response.data)
       if(response.data.success){
         toast.success("Succesfully applied for doctor account");
       } else {
@@ -172,7 +172,7 @@ function ApplyDoctor() {
           />
         </Grid>
         <Grid item xs={12} lg={4} sx={griditemStyle}>
-          <Typography sx={typoStyle}>Fee Per Consultation</Typography>
+          <Typography sx={typoStyle}>Fee Per Consultation (in Rs)</Typography>
           <TextField
             fullWidth
             size="small"

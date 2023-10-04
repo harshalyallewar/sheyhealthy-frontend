@@ -53,6 +53,7 @@ function Doctor({ doctor }) {
         <Typography sx={rightStyle} component={"h4"}>
           <p style={leftStyle}>Fee Per Visit : </p>
           {doctor.feePerConsultation}
+          <p style={leftStyle}> Rs</p>
         </Typography>
 
         <Typography sx={rightStyle} component={"h4"}>

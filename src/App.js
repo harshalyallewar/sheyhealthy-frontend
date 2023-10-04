@@ -148,11 +148,15 @@ function App() {
           }
         />
 
-        <Route path='/*' element={
-          <ProtectedRoutes>
-            <Home/>
-          </ProtectedRoutes>
-        }/>
+        <Route
+          path="/*"
+          element={
+            <ProtectedRoutes>
+              <Home />
+            </ProtectedRoutes>
+          }
+        />
+        <Route element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
