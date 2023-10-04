@@ -156,7 +156,7 @@ function App() {
             </ProtectedRoutes>
           }
         />
-        <Route element={<Home />} />
+        <Route element={Home} />
       </Routes>
     </BrowserRouter>
   );
