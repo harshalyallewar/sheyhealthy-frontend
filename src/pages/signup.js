@@ -151,6 +151,7 @@ function Signup() {
             <TextField
               value={name}
               size="small"
+              name="name"
               required
               sx={textfieldStyle}
               onChange={(e) => setName(e.target.value)}
@@ -162,6 +163,7 @@ function Signup() {
               value={email}
               size="small"
               type="email"
+              name="email"
               required
               sx={textfieldStyle}
               onChange={(e) => setEmail(e.target.value)}
@@ -173,6 +175,7 @@ function Signup() {
               value={password}
               size="small"
               type="password"
+              name="password"
               required
               sx={textfieldStyle}
               onChange={(e) => setPass(e.target.value)}

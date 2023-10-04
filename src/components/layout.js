@@ -11,7 +11,9 @@ import { Typography, IconButton, Badge } from "@mui/material";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setUser } from "../redux/userInfo";
+
 
 function Layout(props) {
 
@@ -19,6 +21,8 @@ function Layout(props) {
     const {userDetails} = useSelector((state)=>state.user);
     const Location = useLocation();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+
 
     const iconStyle = {
          fontSize: "28px" 
@@ -97,6 +101,10 @@ function Layout(props) {
         ];
 
     const menuToBeRendered = userDetails?.isAdmin ? adminMenu : userDetails?.isDoctor ? doctorMenu : userMenu ;
+       
+    const setUserToNull = ()=>{
+        dispatch(setUser("null"));
+    }
 
   return (
     <div style={{ height: "100vh", overflowX: "scroll" }}>
@@ -138,7 +146,8 @@ function Layout(props) {
             <div
               onClick={() => {
                 localStorage.clear();
-                window.location.reload();              
+                setUserToNull();
+                navigate('/login')              
               
               
             }}
