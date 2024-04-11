@@ -215,7 +215,7 @@ function BookAppointments() {
               }}
               sx={{ width: { xs: 220, sm: 300 }, mb: "22px" }}
               onChange={(val) => {
-                setDate(moment(val.target.value).format("DD-MM-YYYY"));
+                setDate(moment(val.target.value).format("YYYY-MM-DD"));
                 setisAvailable(false);
               }}
             />
